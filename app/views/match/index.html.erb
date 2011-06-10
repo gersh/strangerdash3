@@ -1,25 +1,5 @@
 <%= videostream(@token,"stream") %>
 <%= videorecord(@token,"record") %>
 <%= link_to 'next', '/match/next', :remote => true %>
-<script type="text/javascript">
-
-$(document).ready(function(){
-    var interval=setInterval(function(){
-        var camerasEl = document.getElementById("record");
-        if(camerasEl != undefined && camerasEl.getCameras && camerasEl.getCameras()) {    
-            clearInterval(interval);
-            var cameras=camerasEl.getCameras();
-            for(var i in cameras) {
-                $("#webcams").append("<option value=\"" +i +"\">" + cameras[i] + "</option>\n");
-            }
-        }
-    },500);
-});
-
-$("#chooseCam").click(function(){
-      
-});
-</script>
-<select id="webcams">
-</select>
-<input id="chooseCam" type="button" value="Choose Cam"/>
+<%= video_selector('record') %>
+<%= audio_selector('record') %>
