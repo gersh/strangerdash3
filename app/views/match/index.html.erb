@@ -1,5 +1,16 @@
 <%= videostream(@token,"stream") %>
-<%= videorecord(@token,"record") %>
+<%= videorecord(@token,"record","640","480","0") %>
 <%= link_to 'next', '/match/next', :remote => true %>
 <%= video_selector('record') %>
-<%= audio_selector('record') %>
+<%= audio_selector('record') %><br/>
+Width: <input type="text" value="640" id="reswidth"/> Height:
+<input type="text" value="480"
+       id="resheight"/> <button id="btnChangeRes">Change
+  Resolution</button> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#btnChangeRes").click(function(){
+          document.getElementById("record").changeResolution($("#reswidth").val(),$("#resheight").val());
+     });
+});
+</script>

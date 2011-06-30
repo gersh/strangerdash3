@@ -1,6 +1,7 @@
 Raydash.setup do |config|
   config.userid = "2"
   config.secret = "MzhhZGQ4MmEtNzk5NS00OTM3LTliNTEtN2I5YzVlNTM1MDNm"
-#  config.userid = "1"
-#  config.secret = "YjA1YWQ0YzAtYjk2OC00OWY5LThjNzItNjA1MDE0ZWExMzI4"
+#  config.secret = "MTE3MjZkMjAtOGJlNy00NjI0LThlYzUtZGMzMzJiMmRkMjdi"
+#  config.userid = "t1"
+#  config.secret = "MzVjMjVmMjctZWI0My00ODc5LTgyZmQtMGZhYTYxYzZjOTAw"
 end
