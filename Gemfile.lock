@@ -77,5 +77,5 @@ PLATFORMS
 DEPENDENCIES
   jquery-rails
   rails (= 3.0.5)
-  raydash
+  raydash (= 2.1.0)
   sqlite3
