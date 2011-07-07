@@ -1,6 +1,6 @@
 class RenameTimestamp < ActiveRecord::Migration
   def self.up
-#    rename_column :callbacks, :timestmap, :timestamp
+    rename_column :callbacks, :timestmap, :timestamp
   end
 
   def self.down
