@@ -4,7 +4,7 @@ class CallbackController < ApplicationController
 		c.token=params[:token]
 		c.customGroup=params[:customGroup]
 		c.connectedTo=params[:connectedTo]
-		c.timestmap=params[:timestamp]
+		c.timestamp=params[:timestamp]
 		c.type=params[:type]
 		c.save()
 		render :json => {}
