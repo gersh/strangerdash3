@@ -1,6 +1,6 @@
 class CallbackController < ApplicationController
 	def index()
-		c = Callback.new
+		c = MyModels::Callback.new
 		c.token=params[:token]
 		c.customGroup=params[:customGroup]
 		c.connectedTo=params[:connectedTo]

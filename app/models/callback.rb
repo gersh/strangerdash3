@@ -1,2 +1,4 @@
-class Callback < ActiveRecord::Base
+module MyModels
+  class Callback < ActiveRecord::Base
+  end
 end
