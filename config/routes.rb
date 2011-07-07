@@ -14,6 +14,7 @@ Strangerdash3::Application.routes.draw do
   #   resources :products
   get '/match' => 'match#index'
   get '/match/next' => 'match#next'
+  get '/callback' => 'callback#index'
   # Sample resource route with options:
   #   resources :products do
   #     member do
