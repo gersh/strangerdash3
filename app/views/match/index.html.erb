@@ -7,10 +7,18 @@ Width: <input type="text" value="640" id="reswidth"/> Height:
 <input type="text" value="480"
        id="resheight"/> <button id="btnChangeRes">Change
   Resolution</button> 
+
+Audio Quality(1-10 scale): <input id="txtAudioQuality" type="text"
+                      value="10"/> <button id="btnAudioQuality">Change
+                      Audio Quality</button>
 <script type="text/javascript">
 $(document).ready(function(){
     $("#btnChangeRes").click(function(){
           document.getElementById("record").changeResolution($("#reswidth").val(),$("#resheight").val());
-     });
+    });
+    $("#btnAudioQuality").click(function(){
+          document.getElementById("record").changeAudioQuality($("#txtAudioQuality").val());
+    });
+
 });
 </script>
